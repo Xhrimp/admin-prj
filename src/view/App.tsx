@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from '../logo.svg'
+import Switch from '@mui/material/Switch';
 
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <Switch {...label} defaultChecked />
       </header>
     </div>
   );
