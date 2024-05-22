@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import logo from '../logo.svg'
 import Switch from '@mui/material/Switch';
+import { Button } from '@mui/material';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 function App() {
@@ -21,6 +22,7 @@ function App() {
           Learn React
         </a>
         <Switch {...label} defaultChecked />
+        <Button>abc</Button>
       </header>
     </div>
   );
