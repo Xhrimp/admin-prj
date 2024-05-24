@@ -1,16 +1,31 @@
-import React from 'react';
-import './App.css';
-import logo from '../logo.svg'
-import Switch from '@mui/material/Switch';
-import { Button } from '@mui/material';
+import React from 'react'
+import './App.css'
+import { ThemeProvider, createTheme } from '@mui/material'
+import Login from './login'
+import FogotPass from './login/fogotPass/FogotPass'
 
-const label = { inputProps: { 'aria-label': 'Switch demo' } };
+const label = { inputProps: { 'aria-label': 'Switch demo' } }
+
+const theme = createTheme({
+  components: {
+    MuiStack: {
+      defaultProps: {
+        useFlexGap: true,
+        fontFamily: 'Roboto, sans-serif',
+      },
+    },
+  },
+})
+
 function App() {
   return (
-    <div className="App">
-
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <Login /> */}
+        <FogotPass />
+      </div>
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
