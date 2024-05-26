@@ -1,13 +1,12 @@
-import React from 'react';
 import './App.css';
 import logo from '../logo.svg'
-import Switch from '@mui/material/Switch';
-import { Button } from '@mui/material';
+import SideBar from './common/sidebar';
 
-const label = { inputProps: { 'aria-label': 'Switch demo' } };
 function App() {
+  // const label = { inputProps: { 'aria-label': 'Switch demo' } };
+ 
   return (
-    <div className="App">
+    <div className="App" style={{background: '#fff'}}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,8 +20,9 @@ function App() {
         >
           Learn React
         </a>
-        <Switch {...label} defaultChecked />
-        <Button>abc</Button>
+        <div>
+<SideBar/>
+    </div>
       </header>
     </div>
   );
