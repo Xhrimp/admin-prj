@@ -15,15 +15,22 @@ function FogotPass() {
 
                     </Typography>
 
-                    <TextField style={{ width: "400px", marginTop: "20px" }} id="outlined-basic" label="Type your Email Address" variant="outlined" ></TextField>
-                    <div style={{ padding: "5px 0", marginTop: "10px" }}>
-                        <Button style={{ width: "400px", padding: "10px 0" }} variant="contained">Send Request</Button>
+                    <TextField align="center" style={{ display: "flex", width: "400px", marginTop: "20px", margin: "0 auto" }} id="outlined-basic" label="Type your Email Address" variant="outlined" >
+
+
+
+                    </TextField>
+                    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", padding: "5px 76px", marginTop: "10px" }}>
+
+                        <Button align="center" style={{ width: "100%", padding: "10px 0", display: "flex" }} variant="contained">Send Request</Button>
+                        <Button style={{ width: "100%", padding: "10px 0" }} variant="text">Return to sign-in</Button>
                     </div>
-                    <Button style={{ width: "400px", padding: "10px 0" }} variant="text">Return to sign-in</Button>
-                </Container>
 
 
-            </div>
+                </Container >
+
+
+            </div >
         </>
 
     )

@@ -22,9 +22,9 @@ const theme = createTheme({
 
 function App() {
   // const label = { inputProps: { 'aria-label': 'Switch demo' } };
- 
+
   return (
-    <div className="App" style={{background: '#fff'}}>
+    <div className="App" style={{ background: '#fff' }}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -39,12 +39,11 @@ function App() {
           Learn React
         </a>
         <div>
-          <SideBar/>
+          <SideBar />
         </div>
         <ThemeProvider theme={theme}>
           <div className="App">
-           {/* <Login /> */}
-          <FogotPass />
+
           </div>
         </ThemeProvider>
       </header>

@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './view/App';
+
 import FogotPass from './view/login/fogotPass/FogotPass';
 import reportWebVitals from './reportWebVitals';
+import { Login } from '@mui/icons-material';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <></>
+    <FogotPass></FogotPass>
 
   </React.StrictMode>
 );
