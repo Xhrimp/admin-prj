@@ -1,7 +1,7 @@
 import headerStyle from './header.module.scss'
 
 const Header = () => {
-  return 
+  return <></>
 }
 
 export default Header
