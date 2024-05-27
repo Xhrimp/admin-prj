@@ -1,7 +1,9 @@
 import { Button, Container, Grid, Stack, TextField } from '@mui/material'
 import imgLogin from '../../assets/login.jpg'
 import style from './login.module.scss'
-
+import FogotPass from './fogotPass/FogotPass';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className={style.container}>
@@ -30,6 +32,7 @@ const Login = () => {
               variant="outlined"
             />
             <Button variant="contained">Đăng nhập</Button>
+            <Link style={{ display: "flex", flexDirection: "row-reverse", textDecoration: "none", color: "grey", marginRight: "2px" }} to="/ForgotPass">Forgot Pass</Link>
           </Stack>
         </Grid>
       </Grid>
