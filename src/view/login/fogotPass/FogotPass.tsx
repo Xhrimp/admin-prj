@@ -5,9 +5,8 @@ function FogotPass() {
     const [emailForgot, editForgot] = useState()
 
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         editForgot(e.target.value)
-
 
     }
     const handleSendEmail = () => {
@@ -31,17 +30,15 @@ function FogotPass() {
                     </Typography>
 
                     <TextField
-                        onChange={handleChange}
-
-
-                        align="center" style={{ display: "flex", width: "400px", marginTop: "20px", margin: "0 auto" }} id="outlined-basic" label="Type your Email Address" variant="outlined" >
+                        onChange={() => handleChange}
+                        style={{ display: "flex", width: "400px", marginTop: "20px", margin: "0 auto" }} id="outlined-basic" label="Type your Email Address" variant="outlined" >
 
 
 
                     </TextField>
                     <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", padding: "5px 76px", marginTop: "10px" }}>
 
-                        <Button onClick={handleSendEmail} align="center" style={{ width: "100%", padding: "10px 0", display: "flex" }} variant="contained">Send Request</Button>
+                        <Button onClick={handleSendEmail} style={{ width: "100%", padding: "10px 0", display: "flex" }} variant="contained">Send Request</Button>
                         <Button style={{ width: "100%", padding: "10px 0" }} variant="text">
                             <Link style={{ width: "100%", textDecoration: "none" }} to="/Login">Return to Login</Link>
                         </Button>
