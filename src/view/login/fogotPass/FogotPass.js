@@ -1,7 +1,22 @@
 import { Button, Container, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 function FogotPass() {
+    const [emailForgot, editForgot] = useState()
+
+
+    const handleChange = (e) => {
+        editForgot(e.target.value)
+
+
+    }
+    const handleSendEmail = () => {
+        console.log(emailForgot);
+
+
+    }
+
+
 
     return (
         <>
@@ -15,18 +30,24 @@ function FogotPass() {
 
                     </Typography>
 
-                    <TextField align="center" style={{ display: "flex", width: "400px", marginTop: "20px", margin: "0 auto" }} id="outlined-basic" label="Type your Email Address" variant="outlined" >
+                    <TextField
+                        onChange={handleChange}
+
+
+                        align="center" style={{ display: "flex", width: "400px", marginTop: "20px", margin: "0 auto" }} id="outlined-basic" label="Type your Email Address" variant="outlined" >
 
 
 
                     </TextField>
                     <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", padding: "5px 76px", marginTop: "10px" }}>
 
-                        <Button align="center" style={{ width: "100%", padding: "10px 0", display: "flex" }} variant="contained">Send Request</Button>
+                        <Button onClick={handleSendEmail} align="center" style={{ width: "100%", padding: "10px 0", display: "flex" }} variant="contained">Send Request</Button>
                         <Button style={{ width: "100%", padding: "10px 0" }} variant="text">
                             <Link style={{ width: "100%", textDecoration: "none" }} to="/Login">Return to Login</Link>
                         </Button>
+
                     </div>
+
 
 
                 </Container >
