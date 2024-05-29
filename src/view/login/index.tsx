@@ -2,6 +2,7 @@ import { Button, Container, Grid, Stack, TextField } from '@mui/material'
 import imgLogin from '../../assets/login.jpg'
 import style from './login.module.scss'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -81,9 +82,9 @@ const Login = () => {
               error={Boolean(errors.password)}
               helperText={errors.password}
             />
-            <a style={{ margin: '0', textAlign: 'right', cursor: 'pointer' }}>
+            <Link to='/ForgotPass' style={{ margin: '0', textAlign: 'right', cursor: 'pointer', textDecoration: "none" }}>
               Quên mật khẩu
-            </a>
+            </Link>
             <Button variant="contained" onClick={handleSubmit}>
               Đăng nhập
             </Button>
