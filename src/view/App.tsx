@@ -1,13 +1,14 @@
-import './App.css';
+import './App.css'
 import logo from '../logo.svg'
-import SideBar from './common/sidebar';
+import SideBar from './common/sidebar'
 import React from 'react'
 import './App.css'
 import { ThemeProvider, createTheme } from '@mui/material'
 import Login from './login'
 import FogotPass from './login/fogotPass/FogotPass'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './layout/header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './layout/header'
+import Courses from './courses'
 const label = { inputProps: { 'aria-label': 'Switch demo' } }
 
 const theme = createTheme({
@@ -22,16 +23,14 @@ const theme = createTheme({
 })
 
 function App() {
-  // const label = { inputProps: { 'aria-label': 'Switch demo' } };
-
   return (
     <Routes>
       <Route path="/" element={<Header />} />
       <Route path="/ForgotPass" element={<FogotPass />} />
       <Route path="/Login" element={<Login />} />
-
     </Routes>
-  );
+    // <Courses />
+  )
 }
 
 export default App
