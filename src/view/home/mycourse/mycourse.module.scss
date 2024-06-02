@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 1300px;
+
+    padding: 20px 0px 20px 0px;
+
+    .wrapper_maintitle {
+        width: 100%;
+        margin-bottom: 16px;
+
+
+
+
+    }
+
+    .wrapper_content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 78px;
+
+
+        .wrapper_content_inf {
+
+            display: flex;
+            width: 254px;
+            align-items: center;
+            padding: 20px 0px;
+            height: 270px;
+            box-shadow: 0px 4px 10px rgb(192 210 235 / 50%);
+            margin: 16px;
+            margin-top: 0px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            flex-direction: column;
+            border-radius: 10px;
+            justify-content: center;
+            background-color: white;
+            color: rgb(77, 74, 74);
+
+            .wrapper_content_inf_img {
+                transform: translateY(-22px);
+
+            }
+
+            .wrapper_content_inf_inner {
+
+                transform: translateY(-6px);
+                width: 100%;
+                color: #1C3967;
+
+                font-weight: 700;
+
+
+
+                .wrapper_content_inf_inner_button {
+
+
+                    background-color: white;
+                    border: none;
+                    border: 1px solid rgb(139, 137, 137);
+                    color: rgb(52, 50, 50);
+                    padding: 5px 14px;
+                    text-align: center;
+                    text-decoration: none;
+
+                    border-radius: 15px;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    z-index: 1000;
+
+                }
+
+            }
+
+        }
+    }
+
+    .wrapper_content_inf:hover {
+        transform: translate(0, -10px);
+        transition-duration: 0.6s;
+        cursor: pointer;
+    }
+
+    .wrapper_content_inf_inner_button:hover {
+        color: rgb(234, 155, 9)
+    }
+
+
+
+}
