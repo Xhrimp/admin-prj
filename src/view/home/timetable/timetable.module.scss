@@ -1,0 +1,28 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+
+
+}
+
+tr:hover {
+    background-color: rgb(191, 189, 189);
+
+
+}
+
+tr:first-child:hover {
+
+    background-color: white;
+}
