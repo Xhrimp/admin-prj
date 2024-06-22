@@ -13,7 +13,7 @@ import MyCourse from '../view/home/mycourse/MyCourse';
 import CourseInfo from '../view/home/courseinfo/CourseInfo';
 import CourseInfomation from '../view/home/courseInformation/CourseInformation';
 import Timetable from '../view/home/timetable/TimeTable';
-import Testtail from '../view/home/Testtail';
+
 
 
 
