@@ -26,8 +26,6 @@ function CustomTabPanel(props: TabPanelProps) {
     }
     const handleSendEmail = () => {
         console.log(emailForgot);
-
-
     }
 
 
