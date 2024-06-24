@@ -145,6 +145,7 @@ export default function SideBar() {
                     minHeight: 48,
                     justifyContent: open ? 'initial' : 'center',
                     px: 2.5,
+
                   }}
                 >
                   <ListItemIcon
@@ -158,6 +159,7 @@ export default function SideBar() {
                   </ListItemIcon>
                   <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
+
               </ListItem>
             )
           })}
