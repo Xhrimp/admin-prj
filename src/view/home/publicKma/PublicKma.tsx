@@ -10,8 +10,8 @@ const PublicKma = () => {
     return (
         <div className={style.wrapper}>
             <div className={style.wrapper_maintitle} >
-                <h1 style={{ textAlign: "center", marginBottom: "-10px" }}>Dịch Vụ Công</h1>
-                <p style={{ textAlign: "center", color: "rgb(142, 119, 119)" }}>Mang đến các dịch vụ giúp sinh viên tiết kiệm được thời gian công sức</p>
+                <h1 style={{ textAlign: "center", fontSize: "30px", fontWeight: "bold" }}>Dịch Vụ Công</h1>
+                <p style={{ textAlign: "center", color: "rgb(142, 119, 119)" }}>Tạo nhanh các biểu mẫu, đơn xin phép , các loại giấy tờ v.v..</p>
             </div>
             <div className={style.wrapper_content} >
                 <div className={style.wrapper_content_inf}  >
