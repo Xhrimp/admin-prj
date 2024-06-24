@@ -7,7 +7,6 @@ table {
 td,
 th {
 
-    border: none;
     border-bottom: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
@@ -17,12 +16,21 @@ th {
 }
 
 tr:hover {
-    background-color: rgb(191, 189, 189);
+    background-color: #bcb8b8;
 
 
 }
 
 tr:first-child:hover {
 
-    background-color: white;
+    background-color: rgb(28 25 23);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.childtable tr td {
+
+    border: none;
 }

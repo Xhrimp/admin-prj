@@ -82,7 +82,7 @@ const Timetable = () => {
                     <div>
                         <h1 style={{ fontWeight: "bolder", fontSize: "30px" }}>Thời khóa biểu</h1>
                         <table style={{ border: "1px solid #dddddd" }}>
-                            <tr >
+                            <tr className="bg-stone-900  text-white" >
                                 <th>STT</th>
                                 <th>Tên môn học</th>
                                 <th>Hình thức GD</th>

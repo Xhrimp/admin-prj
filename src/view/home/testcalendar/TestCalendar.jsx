@@ -157,7 +157,7 @@ export default function Calendar1() {
                                             !isToday(day) &&
                                             !isSameMonth(day, firstDayCurrentMonth) &&
                                             'text-gray-400',
-                                            isEqual(day, selectedDay) && isToday(day) && 'bg-red-500',
+                                            isEqual(day, selectedDay) && isToday(day) && 'bg-slate-950',
                                             isEqual(day, selectedDay) &&
                                             !isToday(day) &&
                                             'bg-gray-900',
