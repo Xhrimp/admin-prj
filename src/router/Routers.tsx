@@ -9,7 +9,20 @@ import Login from '../view/login';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Calendar from '../view/home/schedule/Calendar';
 import PublicKma from '../view/home/publicKma/PublicKma';
+
+import CourseInfo from '../view/home/courseinfo/CourseInfo';
+import CourseInfomation from '../view/myCourseInfo/courseInformation/CourseInformation';
+import Timetable from '../view/timeTable/timetable/TimeTable';
+import Hometab from '../view/home';
 import MyCourse from '../view/home/mycourse/MyCourse';
+import TabCourse from '../view/myCourseInfo/tabCourse';
+import Example1 from '../view/home/testcalendar/TestCalendar';
+import Calendar1 from '../view/home/testcalendar/TestCalendar';
+
+
+
+
+
 const label = { inputProps: { 'aria-label': 'Switch demo' } }
 
 
@@ -19,9 +32,12 @@ function Routers() {
 
     return (
         <Routes>
-            <Route path="/" element={<MyCourse />} />
-            <Route path="/ForgotPass" element={<FogotPass />} />
+            <Route path="/" element={<Hometab />} />
+            <Route path="/tabcourse" element={<TabCourse />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/timetable" element={<Timetable />} />
+            <Route path="/ti1" element={<Calendar1 />} />
+
         </Routes>
 
 

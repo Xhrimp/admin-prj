@@ -12,6 +12,8 @@ import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Header from './layout/header';
 import PublicKma from './home/publicKma/PublicKma';
 import Calendar from './home/schedule/Calendar';
+import Footer from './common/footer/Footer';
+import Header1 from './Headertest/Header';
 const label = { inputProps: { 'aria-label': 'Switch demo' } }
 
 const theme = createTheme({
@@ -30,9 +32,9 @@ function App() {
 
   return (
     <>
-
+      <Header1 />
       <Routers />
-
+      <Footer />
 
 
 
