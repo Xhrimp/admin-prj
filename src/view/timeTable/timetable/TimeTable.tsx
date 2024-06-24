@@ -62,9 +62,9 @@ const Timetable = () => {
 
     ]
 
-    const rendsubject = subject.map(item =>
+    const rendsubject = subject.map((item, index) =>
         < tr className="childtable" >
-            <td>{item.id}</td>
+            <td>{index + 1}</td>
             <td>{item.name}</td>
             <td>{item.learntype}</td>
             <td>{item.lmsclas}</td>

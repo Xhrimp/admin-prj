@@ -13,6 +13,13 @@ import { Description } from '@headlessui/react';
 const
     CourseInfomation = () => {
 
+
+
+        // sẽ viết api lấy ra khóa học dựa theo id khóa học 
+
+
+
+
         const [value, setValue] = React.useState<number | null>(5);
         const CourseInfo = [{
             id: 0,
@@ -174,14 +181,6 @@ const
                 </div>
             </div>
         );
-
-
-
-
-
-
-
-
         return (
             <>
 

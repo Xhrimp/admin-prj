@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
 import Header from './layout/header'
 import PublicKma from './home/publicKma/PublicKma'
 import Calendar from './home/schedule/Calendar'
+import Footer from './common/footer/Footer'
 const label = { inputProps: { 'aria-label': 'Switch demo' } }
 
 const theme = createTheme({
@@ -45,8 +46,10 @@ function App() {
       >
         <SideBar />
         <Divider orientation="vertical" variant="middle" flexItem />
-        <Routers />
+
       </Box>
+      <Routers />
+      <Footer />
     </>
   )
 }

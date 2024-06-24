@@ -18,16 +18,24 @@ import TabCourse from '../view/myCourseInfo/tabCourse'
 import Example1 from '../view/home/testcalendar/TestCalendar'
 import Calendar1 from '../view/home/testcalendar/TestCalendar'
 
+
 const label = { inputProps: { 'aria-label': 'Switch demo' } }
 
 function Routers() {
   // const label = { inputProps: { 'aria-label': 'Switch demo' } };
+  const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+
 
   return (
     <Routes>
       <Route path="/" element={<Hometab />} />
-      <Route path="/subjects" element={<TabCourse />} />
+
+      <Route path={`/mycourse/subject/:id`} element={<TabCourse />} />
+      <Route path="/mycourse" element={<MyCourse />} />
       <Route path="/Login" element={<Login />} />
+      <Route path={"/timetable"} element={<Timetable />} />
+
       <Route path="/ti1" element={<Calendar1 />} />
     </Routes>
   )

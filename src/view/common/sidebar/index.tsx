@@ -14,7 +14,14 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import InboxIcon from '@mui/icons-material/MoveToInbox'
+import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail'
+import WorkIcon from '@mui/icons-material/Work';
+import InfoIcon from '@mui/icons-material/Info';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import "./sidebar.module.scss"
+
+
 import { BrowserRouter, Link, Router } from 'react-router-dom'
 
 const drawerWidth = 240
@@ -99,6 +106,9 @@ export default function SideBar() {
     setOpen(false)
   }
 
+  const icon = ['<HomeIcon/>', '<InboxIcon />', '<MailIcon />']
+
+
   return (
     <Box>
       <CssBaseline />
@@ -136,10 +146,10 @@ export default function SideBar() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
-          {['Trang chủ', 'Môn học của bạn', 'Dịch vụ'].map((text, index) => {
+        <List  >
+          {[{ name: "Trang chủ", href: '/' }, { name: "Khóa học của tôi", href: '/mycourse' }, { name: "Thời khóa biểu", href: '/timetable' }, { name: "Chi tiết", href: '' }].map((text, index) => {
             return (
-              <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+              <ListItem key={text.name} disablePadding sx={{ display: 'block' }}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -147,6 +157,7 @@ export default function SideBar() {
                     px: 2.5,
 
                   }}
+                  href={text.href}
                 >
                   <ListItemIcon
                     sx={{
@@ -155,9 +166,15 @@ export default function SideBar() {
                       justifyContent: 'center',
                     }}
                   >
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                    {index === 0 ? <HomeIcon /> : ''}
+                    {index === 1 ? <WorkIcon /> : ''}
+                    {index === 2 ? <CalendarMonthIcon /> : ''}
+                    {index === 3 ? <InfoIcon /> : ''}
+
+
+
                   </ListItemIcon>
-                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                  <ListItemText primary={text.name} sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
 
               </ListItem>
